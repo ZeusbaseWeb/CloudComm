@@ -1,0 +1,7 @@
+name: cloudcomm
+
+version: 0.0.1
+
+compatibility: 2.1.0
+
+tags: ["SMS", "fax", "voice", "twilio", "phaxio"]
