@@ -6,7 +6,7 @@ The Twilio library is based off Ben Edmunds's codeigniter library (which is base
 
 ###Example
 	//load spark
-	$this->load->spark('cloudcomm/0.0.1');
+	$this->load->spark('cloudcomm/0.2.0');
 	
 	//load twilio
 	$this->load->library('twilio');
@@ -19,7 +19,7 @@ Phaxio is a developer-friendly faxing service.  This library is based off Phaxio
 
 ###Example
 	//load spark
-	$this->load->spark('cloudcomm/0.0.1');
+	$this->load->spark('cloudcomm/0.2.0');
 	
 	//load phaxio
 	$this->load->library('phaxio');
@@ -41,7 +41,7 @@ Phaxio is a developer-friendly faxing service.  This library is based off Phaxio
 
 ###Example (2)
 	//load spark
-	$this->load->spark('cloudcomm/0.0.1');
+	$this->load->spark('cloudcomm/0.2.0');
 	
 	//load phaxio
 	$this->load->library('phaxio');
@@ -56,3 +56,16 @@ Phaxio is a developer-friendly faxing service.  This library is based off Phaxio
 
 	//Attach Phaxcode to document		
 	$result = $this->phaxio->attachPhaxcode('path/to/pdf', $options);
+
+## Moonshado
+Moonshado is a SMS gateway.
+
+###Example
+	//load spark
+	$this->load->spark('cloudcomm/0.2.0');
+	
+	//load twilio
+	$this->load->library('moonshado');
+	
+	//Send SMS
+	$response = $this->moonshado->sms('to', 'hello, this is a test');
