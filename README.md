@@ -1,10 +1,10 @@
-#About CloudComm
+# About CloudComm
 CloudComm provides simple access to cloud-based communication services.  Currently, this includes Twilio (SMS, Voice) and Phaxio (fax).
 
-##Twilio
+## Twilio
 The Twilio library is based off Ben Edmunds's codeigniter library (which is based of Twilio's PHP helper).  
 
-###Example
+### Example
 	//load spark
 	$this->load->spark('cloudcomm/0.2.0');
 	
@@ -14,10 +14,10 @@ The Twilio library is based off Ben Edmunds's codeigniter library (which is base
 	//Send SMS
 	$response = $this->twilio->sms('from', 'to', 'hello, this is a test');
 
-##Phaxio
+## Phaxio
 Phaxio is a developer-friendly faxing service.  This library is based off Phaxio's PHP helper.
 
-###Example
+### Example
 	//load spark
 	$this->load->spark('cloudcomm/0.2.0');
 	
@@ -39,7 +39,7 @@ Phaxio is a developer-friendly faxing service.  This library is based off Phaxio
 		echo('Error: ' . $result->getMessage());
 	}
 
-###Example (2)
+### Example (2)
 	//load spark
 	$this->load->spark('cloudcomm/0.2.0');
 	
@@ -60,7 +60,7 @@ Phaxio is a developer-friendly faxing service.  This library is based off Phaxio
 ## Moonshado
 Moonshado is a SMS gateway.  This simple library allows you to send SMS messages as noted in the example below.  The response variable returns the XML string from the Moonshado server.
 
-###Example
+### Example
 	//load spark
 	$this->load->spark('cloudcomm/0.2.0');
 	
