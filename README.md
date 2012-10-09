@@ -58,7 +58,7 @@ Phaxio is a developer-friendly faxing service.  This library is based off Phaxio
 	$result = $this->phaxio->attachPhaxcode('path/to/pdf', $options);
 
 ## Moonshado
-Moonshado is a SMS gateway.
+Moonshado is a SMS gateway.  This simple library allows you to send SMS messages as noted in the example below.  The response variable returns the XML string from the Moonshado server.
 
 ###Example
 	//load spark
